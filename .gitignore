@@ -1,0 +1,4 @@
+package-lock.json
+dist
+src/test.ts
+node_modules
