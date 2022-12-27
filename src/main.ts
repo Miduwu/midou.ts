@@ -8,9 +8,8 @@ class Timeouts extends TypedEmitter<Events> {
     public db: Database
     constructor(options?: TimeoutOptions) {
         super()
-        this.restore = options?.restore ?? true
-        this.db = new Database()
-        this.db.start()
+        this.restore = options?.restore ?? true;
+        (this.db = new Database()).start()
     }
     public async update_timeouts(timeouts: Timeout[]): Promise<void> {
         await this.db.set('timeouts', timeouts)
@@ -45,8 +44,7 @@ class Timeouts extends TypedEmitter<Events> {
                 await this.remove(timeout)
                 if(this.restore) this.emit('expires', timeout)
             } else {
-                let left = timeout.expires - Date.now()
-                this.set_expire(timeout, left)
+                this.set_expire(timeout, timeout.expires - Date.now())
             }
         }
     }
