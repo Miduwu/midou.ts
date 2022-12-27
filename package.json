@@ -9,5 +9,28 @@
     "midb": "^2.0.0",
     "tiny-typed-emitter": "^2.1.0",
     "tslib": "^2.4.1"
-  }
+  },
+  "name": "midou.ts",
+  "version": "1.0.0",
+  "main": "dist/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Miduwu/midou.ts.git"
+  },
+  "keywords": [
+    "timeouts",
+    "persistent-timeouts",
+    "mid",
+    "setTimeout"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Miduwu/midou.ts/issues"
+  },
+  "homepage": "https://github.com/Miduwu/midou.ts#readme",
+  "description": "A powerful library to manage persistent timeouts!"
 }

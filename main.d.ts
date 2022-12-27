@@ -3,7 +3,6 @@ export interface Timeout {
     time: number
     expires: number
     data: any
-    cancelled: boolean
 }
 
 export interface TimeoutOptions {
