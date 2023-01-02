@@ -43,7 +43,7 @@ timeouts.start() // this allow us to restore the timeouts after crash
 
 # Interfaces
 ### Timeout
-```ts
+```js
 {
     "id": string,
     "time": number,
